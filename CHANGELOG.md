@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Fixed wrong parameter name `host` instead of `hosts` in creating `ServiceRegistryFactory`
+
 ## [0.1.0] - 25-03-2020
 
 ### Added

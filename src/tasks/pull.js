@@ -3,10 +3,10 @@ const { default: ServiceRegistryFactory } = require('@hai.dinh/service-registry'
 const writeJsonAtRootProject = require('../utils/writeJsonFileAtRootProject');
 const readJsonAtRootProject = require('../utils/readJsonFileAtRootProject');
 
-const pull = async ({ env, hosts }) => {
+const pull = async ({ env, host }) => {
   const registry = ServiceRegistryFactory.create({
     driver: 'etcd',
-    hosts,
+    host,
     env,
   });
 
@@ -24,9 +24,11 @@ const pull = async ({ env, hosts }) => {
     dependencies: resolvedDependencies,
   }
 
-  console.log(serviceEnv);
+  console.log(`Writing to service-env.json...`);
 
   await writeJsonAtRootProject('service-env.json', serviceEnv);
+
+  console.log('Done')
 }
 
 module.exports = pull;

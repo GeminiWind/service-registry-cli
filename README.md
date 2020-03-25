@@ -25,7 +25,7 @@ $ service-registry-cli register --service.endpoint http://localhost:1001
 service-registry-cli register --service.endpoint <endpoint > -h <etcd-server-host> -e <environment>
 ```
 
-- ```-h <host>, --hosts<hosts>```
+- ```-h <host>, --host<host>```
 
 Specify etcd host service. Default: "127.0.0.1:2379".
 
@@ -51,7 +51,7 @@ $ service-registry-cli pull
 service-registry-cli pull -h <etcd-server-host> -e <environment>
 ```
 
-- ```-h <host>, --hosts<hosts>```
+- ```-h <host>, --host<host>```
 
 Specify etcd host service. Default: "127.0.0.1:2379".
 
