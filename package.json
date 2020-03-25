@@ -1,0 +1,45 @@
+{
+  "name": "@hai.dinh/service-registry-cli",
+  "version": "0.0.1",
+  "description": "Command-line utility registry service backed by registry-service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Test has not been implemented yet...'"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "service-registry-cli": "./bin/service-registry-cli.js"
+  },
+  "dependencies": {
+    "@hai.dinh/service-registry": "^0.1.0",
+    "app-root-dir": "^1.0.2",
+    "bluebird": "^3.7.2",
+    "commander": "^5.0.0",
+    "fs-extra": "^9.0.0",
+    "json-api-error": "^1.0.6",
+    "ramda": "^0.27.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/runtime": "^7.7.2",
+    "babel-jest": "^25.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jest": "^22.5.1",
+    "jest": "^25.1.0"
+  },
+  "keywords": [
+    "service-registry",
+    "service-registry-cli",
+    "etcd",
+    "micro-service"
+  ],
+  "author": "Gemini Wind <gemini.wind285@gmail.com>",
+  "license": "MIT"
+}

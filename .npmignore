@@ -1,0 +1,10 @@
+coverage
+tests
+.editorconfig
+.gitattributes
+.npmrc.template
+jest.config.json
+.git
+.DS_Store
+.npmrc
+.github
