@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Update README.md
+- Upgrade `@hai.dinh/service-registry` to `v0.1.1`
+
+### Added
+
+- Add `repository` in `package.json`
+
 ## [0.1.0] - 25-03-2020
 
 ### Fixed
@@ -19,5 +28,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release
 
-[0.1.1]: https://github.com/GeminiWind/service-registry/compare/0.1.1...0.1.0
-[0.1.0]: https://github.com/GeminiWind/service-registry/releases/tag/0.1.0
+[0.1.1]: https://github.com/GeminiWind/service-registry-cli/compare/v0.1.1...v0.1.0
+[0.1.0]: https://github.com/GeminiWind/service-registry-cli/releases/tag/v0.1.0

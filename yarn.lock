@@ -865,10 +865,10 @@
     lodash.camelcase "^4.3.0"
     protobufjs "^6.8.6"
 
-"@hai.dinh/service-registry@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@hai.dinh/service-registry/-/service-registry-0.1.0.tgz#0ea7eca9bbd699eec6ddd9c854f1d38d85989700"
-  integrity sha512-QrS4vApFdGaxLHJvW+N5K6y5JlJ3yJ0Mr8zuGzX082yciSALQnWzClQzTnjaaXgFGaYpKAujlRLaOfiGbgu4EA==
+"@hai.dinh/service-registry@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@hai.dinh/service-registry/-/service-registry-0.1.1.tgz#985c975cb6d92bc2f65a0c85d3bf61aefabc9dc7"
+  integrity sha512-hykJIyfFGUHQAgTfpVnK8meXGsshKDcQpqCUxerHGp9O3faatff/PeWYuQMzDqGR+GhIN2ewX+G0C2Egdgl3CA==
   dependencies:
     ajv "^6.10.2"
     etcd3 "^0.2.13"

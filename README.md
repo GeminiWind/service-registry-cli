@@ -59,3 +59,7 @@ Specify etcd host service. Default: "127.0.0.1:2379".
 
 Specify your workspace like: dev, staging or prod.
 
+## LICENSE
+
+[MIT](https://github.com/GeminiWind/service-registry-cli/blob/HEAD/LICENSE)
+

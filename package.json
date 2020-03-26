@@ -10,8 +10,12 @@
   "bin": {
     "service-registry-cli": "./bin/service-registry-cli.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:GeminiWind/service-registry-cli.git"
+  },
   "dependencies": {
-    "@hai.dinh/service-registry": "^0.1.0",
+    "@hai.dinh/service-registry": "^0.1.1",
     "app-root-dir": "^1.0.2",
     "bluebird": "^3.7.2",
     "commander": "^5.0.0",
