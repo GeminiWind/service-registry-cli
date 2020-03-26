@@ -15,6 +15,19 @@ $ npm install @hai.dinh/service-registry-cli
 
 The `service-registry-cli` command allows you to register a new service.
 
+To register a new service, your codebase of service must have `service-definition.json` file at root. This file contains your service definition, like below
+
+```json
+// File: service-definition.json
+{
+  "id": "order-service",
+  "name": "order service",
+  "category": "business",
+  "dependencies": ["storage-service"]
+}
+```
+**Command**
+
 ```
 $ service-registry-cli register --service.endpoint http://localhost:1001
 ```
@@ -40,6 +53,22 @@ Specify the endpoint of service. Other service information 'll be taked from `se
 ### Pull
 
 The `service-registry-cli` command takes dependencies input from `service-definition.json`, then resolves these dependencies. Output 'll be wrote at `service-env.json`
+
+```json
+// File: service-env.json
+{
+  "id": "order-service",
+  "name": "order service",
+  "dependencies": [{
+    "id": "storage-service",
+    "name": "storage service",
+    "category":"storage",
+    "endpoint": "http://storage-service:3000",
+    "version": "1.0.0"
+  }]
+}
+```
+**Command**
 
 ```
 $ service-registry-cli pull
