@@ -1,6 +1,6 @@
 {
   "name": "@hai.dinh/service-registry-cli",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Command-line utility registry service backed by registry-service",
   "main": "index.js",
   "scripts": {
