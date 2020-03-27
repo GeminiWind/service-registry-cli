@@ -1,6 +1,7 @@
 const R = require('ramda');
 const rootDir = require('app-root-dir');
 const fs = require('fs-extra');
+const { InternalError } = require('json-api-error');
 const path = require('path');
 const { promisify } = require('util');
 
@@ -10,7 +11,17 @@ const dir = rootDir.get();
 
 const readJsonAtRootProject = R.pipeP(
   (relativePath) => Promise.resolve(path.resolve(dir, relativePath)),
-  (absolutePath) => readJsonAsync(absolutePath)
+  async (absolutePath) => {
+    let result;
+
+    try {
+      result = await readJsonAsync(absolutePath);
+    } catch (err) {
+      throw new InternalError(`Error in reading file at ${absolutePath}`);
+    }
+
+    return result;
+  },
 )
 
 module.exports = readJsonAtRootProject;
